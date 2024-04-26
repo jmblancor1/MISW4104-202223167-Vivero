@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col mb-2" >
+        <div class="col-md-auto logo-container">
+          <h2>Vivero el Otoño</h2>
+          <img src="assets/vivero.png" class="img-thumbnail" alt="logo">
+        </div>  
+        <table class="table">
+          <thead class="thead-dark">
+            <tr class="table-dark">
+              <th scope="col">#</th>
+              <th scope="col">Nombre Común</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Clima</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let plant of plants">
+              <th scope="row">{{plant.id}}</th>
+              <td>{{plant.nombre_comun}}</td>
+              <td>{{plant.tipo}}</td>
+              <td>{{plant.clima}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>  
