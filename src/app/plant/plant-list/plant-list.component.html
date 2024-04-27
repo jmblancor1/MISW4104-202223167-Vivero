@@ -1,10 +1,15 @@
 <div class="container-fluid">
   <div class="row">
+    <div class="col-12 mb-4">
+      <h1 class="title-style">Vivero el Otoño</h1>
+    </div>
+    <div class="row">
+    <div class="col-12">
+      <img src="assets/vivero.png" class="img-thumbnail" alt="logo">
+    </div>
+    </div>
       <div class="col mb-2" >
-        <div class="col-md-auto logo-container">
-          <h2>Vivero el Otoño</h2>
-          <img src="assets/vivero.png" class="img-thumbnail" alt="logo">
-        </div>  
+        
         <table class="table">
           <thead class="thead-dark">
             <tr class="table-dark">
@@ -15,7 +20,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let plant of plants">
+            <tr *ngFor="let plant of plants" >
               <th scope="row">{{plant.id}}</th>
               <td>{{plant.nombre_comun}}</td>
               <td>{{plant.tipo}}</td>
@@ -24,13 +29,16 @@
             
           </tbody>
         </table>
+        <div class="totals-and-contact">
+          <p class="indoor-text">Total de plantas de interior: {{ indoorPlantCount }}</p>
+          <p class="outdoor-text">Total de plantas de exterior: {{ outdoorPlantCount }}</p>
+        </div>
       </div>
-      <p>Total de plantas de interior: {{ indoorPlantCount }}</p>
-      <p>Total de plantas de exterior: {{ outdoorPlantCount }}</p>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>Contact us: +57 3102105253 - info"&#64;"viveroelotonio - "&#64;"viveroelotonio</p>
+        </blockquote>
+      </figure>  
   </div>
-  <figure class="text-end">
-    <blockquote class="blockquote">
-      <p>Contact us: +57 3102105253 - info"&#64;"viveroelotonio - "&#64;"viveroelotonio</p>
-    </blockquote>
-  </figure>
+   
 </div>  
